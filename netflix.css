@@ -1,0 +1,46 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: 0;
+    text-decoration: none;
+}
+
+
+.form{
+   display: felx;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   padding: 3vh 2vw;
+   border: 1px solid black;
+   background-color: aqua;
+
+}
+.sign{
+    font-size: 50px;
+    margin: 20px 20px;
+    text-align: left;
+    margin-inline-start: auto;
+}
+input{
+    width: 90%;
+    padding: .6rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 1px;
+
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    margin: auto;
+}
+body{
+    background-color: pink;
+    font-family: sans-serif;
+}

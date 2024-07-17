@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            
+            height: 400px;
+            width: 300px;
+            background-color: aqua;
+            margin: auto;
+            position: absolute;
+            top: 20vh;
+            left: 20vw;
+            border: 1px;
+            border-radius: 20px;
+
+        }
+
+        .Ubox {
+            background-color: aqua;
+            height: 30%;
+            width: 100%;
+        }
+
+        .Lbox {
+            background-color: bisque;
+            height: 70%;
+            width: 100%;
+            text-align: center;
+            padding-top: 100px;
+
+        }
+
+        .fa-brands {
+            margin-right: 10px;
+        }
+
+        .mid{
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            background-color: aqua;
+            color: aliceblue;
+            border-radius: 20px;
+            height: 20%;
+            width: 50%;
+        }
+
+        .photo {
+            border-radius: 50px;
+            position: absolute;
+            top: -55px;
+            border: 2px solid blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="Ubox"></div>
+        <div class="mid">
+            <img src="eg.png" alt="" width="40%" class="photo">
+        </div>
+        <div class="Lbox">
+            <p>Frontend developer <br>
+                Tech job <br>
+            <div class="space">
+                <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-github"></i> <i
+                    class="fa-solid fa-envelope"></i>
+            </div>
+            </p>
+            <button type="submit" class="btn">Manage</button>
+        </div>
+    </div>
+</body>
+
+</html>
