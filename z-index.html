@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+
+        }
+        .box{
+            height:500px ;
+            width: 500px;
+            border: 2px solid black;
+            /* background-color: black; */
+             text-align: justify;
+            text-shadow: 2px 2px 8px red;
+            font-size: 18px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            transition: all 1.0s;
+        }
+        img:hover{
+            opacity: 0.5;
+        }
+        .inner-item{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            position: absolute;
+        }
+        .inner-item:nth-child(1) {
+            background-color: pink;
+            top: 0px;
+            z-index: 1;
+        }
+        .inner-item:nth-child(2) {
+            background-color: yellow;
+            left: 0px;
+            z-index: 1;
+        }
+        .inner-item:nth-child(3) {
+            background-color: black;
+            bottom: 0px;
+
+        }
+        .inner-item:nth-child(4) {
+            background-color: green;
+            right: 0px;
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+    </div>
+</body>
+</html>
