@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            width: 350px;
+            height:400px ;
+            border: 2px solid gray;
+            overflow: hidden;
+            background: radial-gradient(pink,beige,violet);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            padding: 10%;
+        }
+        .content{
+            /* border: 2px solid black; */
+            padding: 10px solid black;
+            font-family: sans-serif;
+            text-align: justify;
+            background: radial-gradient(yellow,lightgreen,lightblue);
+            transition: all 2s;
+        }
+        h1,h2,p{
+            margin: 5px 0px;
+        } 
+        .box:hover .content{
+            transform: translateY(-200px);
+        }
+        button{
+            background-color: green;
+            height: 30%;
+            width: 100%;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="eg.png" alt="">
+        <div class="content">
+            <h1>title - city</h1>
+            <button type="submit"><i class="fa-regular fa-heart"></i> Buy now <i class="fa-regular fa-heart"></i></button>
+            <p>discription - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore praesentium animi iusto quibusdam mollitia excepturi, sapiente architecto facilis voluptatibus optio officia amet nobis molestias quos culpa reiciendis doloremque sint reprehenderit!</p>
+        </div>
+    </div>
+</body>
+</html>
